@@ -4,38 +4,75 @@ let resultTwo = document.querySelector("#result-2")
 let resultThree = document.querySelector("#result-3")
 let resultFour = document.querySelector("#result-4")
 
-function generatePasswords()    {
-    generatePassOne();
-    generatePassTwo();
-    generatePassThree();
-    generatePassFour();
-}
 
 
+let shuffleArray = char => {
+    for (let i = char.length - 1; i > 0; i--)   {
+        let j = Math.floor( Math.random() * (i + 1));
+        let temp = char[i];
+        char[i] = char[j];
+        char[j] = temp;
+    }
+    return char
+};
 
-function generatePassOne()    {
-    let passwordOne = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
-    resultOne.textContent = passwordOne
-}
-
-function generatePassTwo()    {
-    let passwordTwo = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
-    resultTwo.textContent = passwordTwo
-}
-
-function generatePassThree()    {
-    let passwordThree = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
-    resultThree.textContent = passwordThree
-}
-
-function generatePassFour()    {
-    let passwordFour = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
-    resultFour.textContent = passwordFour
-}
+shuffleArray(char)
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// function generatePasswords()    {
+//     generatePassOne();
+//     generatePassTwo();
+//     generatePassThree();
+//     generatePassFour();
+// }
+
+
+
+
+// ========================================================================================================================================
+
+
+
+// SHORTER CODE - STILL NEED TO IMPROVE
+
+
+// function generatePassOne()    {
+//     let passwordOne = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
+//     resultOne.textContent = passwordOne
+// }
+
+// function generatePassTwo()    {
+//     let passwordTwo = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
+//     resultTwo.textContent = passwordTwo
+// }
+
+// function generatePassThree()    {
+//     let passwordThree = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
+//     resultThree.textContent = passwordThree
+// }
+
+// function generatePassFour()    {
+//     let passwordFour = char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)] + char[Math.floor(Math.random() * char.length)];
+//     resultFour.textContent = passwordFour
+// }
+
+
+
+// ========================================================================================================================================
 
 
 

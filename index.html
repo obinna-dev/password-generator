@@ -23,9 +23,29 @@
                 </div>
                 <h3>Generate a<br><span>random password</span></h3>
                 <p>Never use an insecure password again.</p>
-                <button onclick="generatePasswords()">
-                    <img src="./image/flash icon.png" alt="generate password icon">
-                    <p>Generate passwords</p></button>
+                <form action="">
+                    <div class="charactercount">
+                    <label for="character-amount-number">Character count:</label>
+                    <input type="number" min="1" max="20" value="12" id="character-amount-number" class="numberinput">
+                    </div>
+                    <input type="range" min="1" max="20" value="12" id="character-amount-range" class="range">                
+                    
+                    <div class="charVariators">
+                        <label for="uppercase">UpperCase</label>
+                        <input type="checkbox" id="uppercase">
+
+                        <label for="numbers">Numbers</label>
+                        <input type="checkbox" id="numbers">
+
+                        <label for="symbols">Symbols</label>
+                        <input type="checkbox" id="symbols">
+                    </div>
+
+                    <button type="submit" onclick="generatePasswords()">
+                        <img src="./image/flash icon.png" alt="generate password icon">
+                        <p>Generate passwords</p></button>
+                </form>
+
                 <div class="thin-line"></div>
                 <!-- flex container -->
                 <div class="results-container"> 

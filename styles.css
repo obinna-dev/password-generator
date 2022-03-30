@@ -1,0 +1,135 @@
+html    {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+body    {
+    background: #1C1C1C;
+}
+
+
+/* app container */
+.password-generator-app-container   {
+    background-color: #1F2937;
+    max-width: 550px;
+    margin: auto;
+}
+.app-contents   {
+    padding: 118px 52px 52px 52px;
+}
+
+
+/* dark mode styling */
+.darky-container    {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0px;
+}
+#icon   {
+    width: 20px;
+    cursor: pointer;
+    opacity: 50%;
+}
+.darky-container > div > p    {
+    opacity: 50%;
+    color: #D2D2D2;
+    font-size: 1rem;
+}
+
+
+/* header and desc */
+h3  {
+    font-family: "karla","Inter", sans-serif;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -2.5%;
+    font-weight: 800;
+    color: white;
+}
+h3 > span   {
+    color: #4ADF86;
+}
+p   {
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #D5D4D8;
+}
+.app-contents > h3  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.app-contents > p   {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+/* button */
+.app-contents > button  {
+    margin-top: 51px;
+    padding: 0px, 17px, 9px, 15px;
+    height: 42px;
+    width: 223px;
+    background: #10B981;
+    border: none;
+    border-radius: 6px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.app-contents > button > img    {
+    width: 30px;
+}
+.app-contents > button > p{
+    color: white;
+    font-weight: 500;  
+    font-size: 1rem;
+    padding-left: 2%;
+}
+
+
+/* thin line divider */
+.thin-line  {
+    border-bottom: 1px solid #2F3E53;
+    max-width: 70%;
+    margin: 35px 0px;
+    padding: 0px 52px;
+}
+
+
+/* results section */
+.results-container  {
+    display: flex;
+    justify-content: start;
+    gap: 1%;
+    margin: 0px;
+}
+.results-container-2  {
+    display: flex;
+    justify-content: start;
+    gap: 1%;
+    margin-top: 9px;
+}
+.results  {
+    height: 42px;
+    width: 223px;
+    color: white;
+    background: #273549;
+    border: none;
+    border-radius: 6px;
+    padding: 9px, 17px, 9px, 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.results > p > img  {
+    width: 50px;
+}
+.results > p    {
+    color: #55F991;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem;
+}

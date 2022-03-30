@@ -124,7 +124,7 @@ form   {
 }
 .range {
     margin-top: 1rem;
-    width: 19.8rem;
+    max-width: 80%;
     height: 15px;
     -webkit-appearance: none;
     background: var(--range-bg-color);
@@ -157,13 +157,11 @@ form > button  {
     align-items: center;
     cursor: pointer;
 }
-
 form > button:active {
     background: #0c9668;
     height: 38px;
     width: 219px;
     margin-bottom: 39px;
-
 }
 form > button > img    {
     width: 30px;
@@ -215,7 +213,7 @@ form > button > p{
 }
 .results > p    {
     color: #55F991;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 80%;
+    font-weight: 400;
     line-height: 2rem;
 }

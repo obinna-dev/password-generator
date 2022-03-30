@@ -1,15 +1,44 @@
+:root   {
+    --bg-color: #1C1C1C;
+    --app-bg-color: #1F2937;
+    --title-color: white;
+    --title-color-green: #4ADF86;
+    --description-color: #D5D4D8;
+    --form-character-color: rgba(255, 255, 255, 0.527);
+    --number-input-color: rgba(255, 255, 255, 0.479);
+    --number-input-bg-color: rgba(17, 17, 17, 0.486);
+    --range-bg-color: rgba(17, 17, 17, 0.486);
+    --result-box-bg-color: #273549;
+    --dark-mode-icon-text: #D2D2D2;
+}
+
+.light-theme   {
+    --bg-color: #1C1C1C;
+    --app-bg-color: #ECFDF5;
+    --title-color: #2B283A;
+    --title-color-green: #10B981;
+    --description-color: #6B7280;
+    --form-character-color: #6B7280;
+    --number-input-color: rgba(255, 255, 255, 0.479);
+    --number-input-bg-color: rgba(17, 17, 17, 0.486);
+    --range-bg-color: rgba(17, 17, 17, 0.486);
+    --result-box-bg-color: #273549;
+    --dark-mode-icon-text: #6B7280;
+}
+
+
 html    {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
 body    {
-    background: #1C1C1C;
+    background-color: var(--bg-color);
 }
 
 
 /* app container */
 .password-generator-app-container   {
-    background-color: #1F2937;
+    background-color: var(--app-bg-color);
     max-width: 550px;
     margin: auto;
 }
@@ -33,7 +62,7 @@ body    {
 }
 .darky-container > div > p    {
     opacity: 50%;
-    color: #D2D2D2;
+    color: var(--dark-mode-icon-text);
     font-size: 1rem;
 }
 
@@ -45,16 +74,16 @@ h3  {
     line-height: 2.5rem;
     letter-spacing: -2.5%;
     font-weight: 800;
-    color: white;
+    color: var(--title-color);
 }
 h3 > span   {
-    color: #4ADF86;
+    color: var(--title-color-green);
 }
 p   {
     font-style: normal;
     font-size: 1.25rem;
     line-height: 1.75rem;
-    color: #D5D4D8;
+    color: var(--description-color);
 }
 .app-contents > h3  {
     margin-top: 0px;
@@ -70,7 +99,7 @@ p   {
 
 form   {
     margin-top: 41px;
-    color: rgba(255, 255, 255, 0.527); 
+    color: var(--form-character-color); 
     font-size: 1rem;
 }
 #character-amount-number    {
@@ -87,8 +116,8 @@ form   {
     align-items: center;
 }
 .numberinput    {
-    color: rgba(255, 255, 255, 0.479);
-    background-color: rgba(17, 17, 17, 0.486);
+    color: var(--number-input-color);
+    background-color: var(--number-input-bg-color);
     height: 1.5rem;
     border: none;
     text-align: center;
@@ -98,7 +127,7 @@ form   {
     width: 19.8rem;
     height: 15px;
     -webkit-appearance: none;
-    background: rgba(17, 17, 17, 0.486);
+    background: var(--range-bg-color);
     outline: none;
     border-radius: 15px;
     overflow: hidden;
@@ -173,7 +202,7 @@ form > button > p{
     height: 42px;
     width: 223px;
     color: white;
-    background: #273549;
+    background: var(--result-box-bg-color);
     border: none;
     border-radius: 6px;
     padding: 9px, 17px, 9px, 15px;
